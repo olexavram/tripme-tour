@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тур "Європейська Класика" — TripMe</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f4f8;
+      margin: 0; padding: 0;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #004080, #00bfff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      animation: fadeInDown 1s ease forwards;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-weight: 700;
+      font-size: 2.6rem;
+      letter-spacing: 1.5px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0;
+      opacity: 0.85;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease forwards;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 3px solid #00bfff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e0e7ef;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      position: relative;
+      padding-left: 20px;
+      transition: background-color 0.3s ease;
+    }
+    ul li:hover {
+      background-color: #f0f8ff;
+      cursor: default;
+    }
+    ul li::before {
+      content: '▶';
+      position: absolute;
+      left: 0;
+      color: #00bfff;
+      font-weight: 700;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #004080;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    .btn-book {
+      display: inline-block;
+      background-color: #00bfff;
+      color: white;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      user-select: none;
+    }
+    .btn-book:hover {
+      background-color: #0077b3;
+      transform: translateY(-3px);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+      background-color: #f9fbfd;
+      box-shadow: inset 0 1px 0 #ddd;
+    }
+    img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease forwards;
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Тур "Європейська Класика: Від Венеції до Праги"</h1>
+    <p>8 днів / 7 ночей — Авторський тур від TripMe</p>
+  </header>
+  <main>
+    <section>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Венеція, Італія" />
+      <h2>Програма туру</h2>
+      <ul>
+        <li><strong>День 1 — Венеція, Італія:</strong> Прибуття, трансфер, гондольна вечірня прогулянка, вечеря з видом на канал.</li>
+        <li><strong>День 2 — Венеція:</strong> Площа Сан-Марко, Базиліка, Палац Дожів, шопінг на острові Бурано, нічний переїзд до Зальцбурга.</li>
+        <li><strong>День 3 — Зальцбург, Австрія:</strong> Тур по місту Моцарта, відвідування замку, вечір з австрійською музикою та пивом.</li>
+        <li><strong>День 4 — Австрійські Альпи:</strong> Озеро Гозау, Дахштайн, катання на фунікулері, повернення до Зальцбурга.</li>
+        <li><strong>День 5 — Відень:</strong> Шенбруннський палац, музейний квартал, вечеря зі штруделем.</li>
+        <li><strong>День 6 — Прага, Чехія:</strong> Старе місто, Карлів міст, Вацлавська площа, чеське пиво та традиційна кухня.</li>
+        <li><strong>День 7 — Прага:</strong> Вільний день (круїз по Влтаві або замок Карлштейн), прощальна вечеря з панорамою міста.</li>
+        <li><strong>День 8 — Виліт додому:</strong> Сніданок, трансфер до аеропорту.</li>
+      </ul>
+    </section>
+    <section>
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Австрійські Альпи" />
+      <h2>У вартість включено</h2>
+      <ul>
+        <li>Проживання в 3–4★ готелях</li>
+        <li>Сніданки</li>
+        <li>Трансфери між містами</li>
+        <li>Екскурсії з гідами</li>
+        <li>Страхування</li>
+      </ul>
+    </section>
+    <section>
+      <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&w=900&q=80" alt="Чеська кухня" />
+      <h2>Ціна</h2>
+      <p class="price">Від 1290 € (залежить від сезону та кількості учасників)</p>
+      <a href="mailto:booking@tripme.com?subject=Бронювання туру Європейська Класика" class="btn-book" role="button">Забронювати тур</a>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 TripMe. Всі права захищені.
+  </footer>
+</body>
+</html>
